@@ -81,6 +81,11 @@ private:
 	static int luaItemGetTier(lua_State* L);
 	static int luaItemSetTier(lua_State* L);
 	static int luaItemGetClassification(lua_State* L);
+	
+	// ItemLevel Functions -->
+	static int luaItemGetItemLevel(lua_State* L);
+	static int luaItemSetItemLevel(lua_State* L);
+	// ItemLevel Functions <--
 
 	static int luaItemCanReceiveAutoCarpet(lua_State* L);
 
