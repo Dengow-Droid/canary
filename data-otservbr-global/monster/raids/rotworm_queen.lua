@@ -43,7 +43,7 @@ monster.flags = {
 	hostile = true,
 	convinceable = false,
 	pushable = false,
-	rewardBoss = true,
+	rewardBoss = false,
 	illusionable = false,
 	canPushItems = true,
 	canPushCreatures = false,
@@ -69,8 +69,8 @@ monster.voices = {
 
 monster.loot = {
 	{ id = 3031, chance = 100000, maxCount = 47 }, -- gold coin
-	{ id = 8143, chance = 3333 }, -- gland
-	{ id = 3492, chance = 20000, maxCount = 45 }, -- worm
+	{ id = 8143, chance = 333 }, -- gland
+	{ id = 3492, chance = 20000, maxCount = 2 }, -- worm
 }
 
 monster.attacks = {

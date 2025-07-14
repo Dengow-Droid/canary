@@ -2,13 +2,13 @@ local mType = Game.createMonsterType("Zugurosh")
 local monster = {}
 
 monster.description = "Zugurosh"
-monster.experience = 10000
+monster.experience = 1000000
 monster.outfit = {
-	lookType = 12,
-	lookHead = 3,
-	lookBody = 18,
-	lookLegs = 19,
-	lookFeet = 91,
+	lookType = 1798,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0,
 }
@@ -22,11 +22,11 @@ monster.bosstiary = {
 	bossRace = RARITY_BANE,
 }
 
-monster.health = 90500
-monster.maxHealth = 90500
+monster.health = 905000
+monster.maxHealth = 905000
 monster.race = "fire"
 monster.corpse = 7893
-monster.speed = 165
+monster.speed = 365
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -107,17 +107,19 @@ monster.loot = {
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -800 },
 	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_LIFEDRAIN, minDamage = 0, maxDamage = -500, range = 4, effect = CONST_ME_MAGIC_RED, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -500, length = 7, spread = 3, effect = CONST_ME_MORTAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -100, radius = 4, effect = CONST_ME_SMALLCLOUDS, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -1500, length = 7, spread = 3, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -2100, radius = 4, effect = CONST_ME_SMALLCLOUDS, target = false },
 	-- fire
 	{ name = "condition", type = CONDITION_FIRE, interval = 3000, chance = 20, minDamage = -10, maxDamage = -10, radius = 4, effect = CONST_ME_EXPLOSIONHIT, target = true },
 	{ name = "combat", interval = 1000, chance = 13, type = COMBAT_MANADRAIN, minDamage = -60, maxDamage = -200, radius = 5, effect = CONST_ME_WATERSPLASH, target = false },
+	{ name = "podzillaphyschain", interval = 2000, chance = 16 },
+	{ name = "rotthligexplo", interval = 2000, chance = 18, minDamage = -2400, maxDamage = -5625 },
 }
 
 monster.defenses = {
 	defense = 55,
 	armor = 45,
-	--	mitigation = ???,
+	mitigation = 2.75,
 	{ name = "combat", interval = 2000, chance = 50, type = COMBAT_HEALING, minDamage = 40, maxDamage = 60, effect = CONST_ME_MAGIC_GREEN, target = false },
 	{ name = "combat", interval = 2000, chance = 50, type = COMBAT_HEALING, minDamage = 400, maxDamage = 600, effect = CONST_ME_MAGIC_GREEN, target = false },
 	{ name = "invisible", interval = 1000, chance = 5, effect = CONST_ME_MAGIC_BLUE },

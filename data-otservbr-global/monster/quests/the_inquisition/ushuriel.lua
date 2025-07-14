@@ -2,13 +2,13 @@ local mType = Game.createMonsterType("Ushuriel")
 local monster = {}
 
 monster.description = "Ushuriel"
-monster.experience = 10000
+monster.experience = 1000000
 monster.outfit = {
-	lookType = 12,
+	lookType = 2816,
 	lookHead = 0,
-	lookBody = 57,
+	lookBody = 0,
 	lookLegs = 0,
-	lookFeet = 80,
+	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0,
 }
@@ -17,11 +17,11 @@ monster.events = {
 	"InquisitionBossDeath",
 }
 
-monster.health = 31500
-monster.maxHealth = 31500
+monster.health = 315000
+monster.maxHealth = 315000
 monster.race = "fire"
 monster.corpse = 6068
-monster.speed = 220
+monster.speed = 320
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -115,18 +115,21 @@ monster.loot = {
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1088 },
-	{ name = "combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -250, maxDamage = -500, length = 10, spread = 3, effect = CONST_ME_MORTAREA, target = false },
-	{ name = "combat", interval = 1000, chance = 8, type = COMBAT_DEATHDAMAGE, minDamage = -30, maxDamage = -760, radius = 5, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 9, type = COMBAT_EARTHDAMAGE, minDamage = -200, maxDamage = -585, length = 8, spread = 3, effect = CONST_ME_SMALLPLANTS, target = false },
-	{ name = "combat", interval = 1000, chance = 8, type = COMBAT_ICEDAMAGE, minDamage = 0, maxDamage = -430, radius = 6, effect = CONST_ME_ICETORNADO, target = false },
+	{ name = "combat", interval = 1000, chance = 10, type = COMBAT_PHYSICALDAMAGE, minDamage = -250, maxDamage = -1500, length = 10, spread = 3, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 1000, chance = 8, type = COMBAT_DEATHDAMAGE, minDamage = -30, maxDamage = -1760, radius = 5, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 9, type = COMBAT_EARTHDAMAGE, minDamage = -200, maxDamage = -1585, length = 8, spread = 3, effect = CONST_ME_SMALLPLANTS, target = false },
+	{ name = "combat", interval = 1000, chance = 8, type = COMBAT_ICEDAMAGE, minDamage = 0, maxDamage = -4430, radius = 6, effect = CONST_ME_ICETORNADO, target = false },
 	{ name = "drunk", interval = 3000, chance = 11, radius = 6, effect = CONST_ME_SOUND_PURPLE, target = false },
 	-- energy damage
 	{ name = "condition", type = CONDITION_ENERGY, interval = 2000, chance = 15, minDamage = -250, maxDamage = -250, radius = 4, effect = CONST_ME_ENERGYHIT, target = false },
+	{ name = "rotthingshaper", interval = 2000, chance = 18, target = false },
+	{ name = "poison chain", interval = 2000, chance = 15, minDamage = -600, maxDamage = -2900 },
 }
 
 monster.defenses = {
 	defense = 45,
 	armor = 50,
+	mitigation = 2.75,
 	{ name = "combat", interval = 1000, chance = 12, type = COMBAT_HEALING, minDamage = 400, maxDamage = 600, effect = CONST_ME_MAGIC_GREEN, target = false },
 	{ name = "speed", interval = 1000, chance = 4, speedChange = 400, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 7000 },
 }

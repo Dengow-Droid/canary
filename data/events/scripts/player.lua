@@ -573,6 +573,29 @@ function Player:onGainExperience(target, exp, rawExp)
 			exp = math.ceil((exp * self:getPreyExperiencePercentage(monsterType:raceId())) / 100)
 		end
 	end
+	
+	if self:getOutfit().lookMount == 883 then
+        exp = exp * 1.3 -- sparkion
+    end
+	
+	if self:getOutfit().lookMount == 2805 then
+        exp = exp * 2.0 -- Petista
+    end
+	if self:getOutfit().lookMount == 2806 then
+        exp = exp * 2.0 -- Black Tornado
+    end
+	if self:getOutfit().lookMount == 2807 then
+        exp = exp * 2.0 -- Grey Tornado
+    end
+	if self:getOutfit().lookMount == 2817 then
+        exp = exp * 2.0 -- Simba Galactico
+    end
+	if self:getOutfit().lookMount == 2818 then
+        exp = exp * 2.0 -- Pegasus Grey
+    end
+	if self:getOutfit().lookMount == 2819 then
+        exp = exp * 2.0 -- Pegasus Black
+    end
 
 	-- VIP Bonus Experience
 	if configManager.getBoolean(configKeys.VIP_SYSTEM_ENABLED) then

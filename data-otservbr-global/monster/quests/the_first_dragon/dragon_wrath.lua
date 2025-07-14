@@ -58,8 +58,8 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, skill = 80, attack = 100 },
-	{ name = "ghastly dragon wave", interval = 2000, chance = 10, minDamage = -50, maxDamage = -250, target = false },
+	{ name = "melee", interval = 2000, chance = 100, skill = 180, attack = 100 },
+	{ name = "ghastly dragon wave", interval = 2000, chance = 10, minDamage = -50, maxDamage = -1250, target = false },
 	{ name = "ghastly dragon curse", interval = 2000, chance = 10, range = 7, target = false },
 	-- poison
 	{ name = "condition", type = CONDITION_POISON, interval = 2000, chance = 10, minDamage = -920, maxDamage = -1260, range = 7, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_SMALLCLOUDS, target = false },

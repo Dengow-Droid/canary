@@ -1133,8 +1133,22 @@ ChestUnique = {
 		useKV = true,
 		itemId = 3634,
 		itemPos = { x = 32769, y = 31968, z = 7 },
-		reward = { { 3734, 1 } },
+		reward = { { 3734, 10 } },
 		questName = "bloodherb",
+	},
+	[7111] = {
+		useKV = true,
+		itemId = 2472,
+		itemPos = { x = 32778, y = 31203, z = 7 },
+		reward = { { 27565, 1 } },
+		questName = "foxtail",
+	},
+	[7112] = {
+		useKV = true,
+		itemId = 2472,
+		itemPos = { x = 32233, y = 31064, z = 7 },
+		reward = { { 3398, 1 } },
+		questName = "dwarvenlegs",
 	},
 	-- Power Bolts Quest (book)
 	[6112] = {
@@ -2544,7 +2558,7 @@ ChestUnique = {
 		storage = Storage.Quest.U8_6.WrathOfTheEmperor.ChestBag,
 	},
 	[6299] = {
-		itemId = 2473,
+	    itemId = 2473,
 		itemPos = { x = 33076, y = 31170, z = 8 },
 		reward = { { 11687, 1 } },
 		weight = 45.00,

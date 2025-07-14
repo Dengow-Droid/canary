@@ -3,7 +3,7 @@ local config = {
 		name = "Mitmah Vanguard",
 		position = Position(34067, 31409, 11),
 	},
-	timeAfterKill = 60,
+	timeAfterKill = 20,
 	playerPositions = {
 		{ pos = Position(34048, 31431, 11), teleport = Position(34067, 31415, 11) },
 		{ pos = Position(34049, 31431, 11), teleport = Position(34067, 31415, 11) },

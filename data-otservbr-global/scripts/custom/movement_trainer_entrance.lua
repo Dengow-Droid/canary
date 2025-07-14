@@ -1,14 +1,14 @@
 local config = {
 	-- Position of the first position (line 1 column 1)
-	firstRoomPosition = { x = 1018, y = 1112, z = 7 },
+	firstRoomPosition = { x = 916, y = 948, z = 8 },
 	-- X distance between each room (on the same line)
-	distancePositionX = 12,
+	distancePositionX = 5,
 	-- Y distance between each room (on the same line)
-	distancePositionY = 12,
+	distancePositionY = 4,
 	-- Number of columns
-	columns = 7,
+	columns = 12,
 	-- Number of lines
-	lines = 54,
+	lines = 15,
 }
 
 local function isBusyable(position)
@@ -67,10 +67,10 @@ function trainerEntrance.onStepIn(creature, item, position, fromPosition)
 	end
 
 	calculatingRoom(creature.uid, config.firstRoomPosition, 0, 0)
-	Game.createMonster("Training Machine", creature:getPosition(), true, false)
-	Game.createMonster("Training Machine", creature:getPosition(), true, false)
+	Game.createMonster("Training Monk", creature:getPosition(), true, false)
+	Game.createMonster("Training Monk", creature:getPosition(), true, false)
 	return true
 end
 
-trainerEntrance:position({ x = 1116, y = 1092, z = 7 })
+trainerEntrance:position({ x = 1195, y = 1030, z = 7 })
 trainerEntrance:register()

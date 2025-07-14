@@ -80,7 +80,6 @@ local items = {
 	[20] = { name = "Jade Amulet", id = 31268 },
 	[21] = { name = "Key of Numerous Locks", id = 19152 },
 	[22] = { name = "Little Adventurer Doll", id = 37058 },
-	[23] = { name = "Loremaster Doll", id = 31267 },
 	[24] = { name = "Lucky Clover Amulet", id = 37059 },
 	[25] = { name = "Mathmaster Shield", id = 25982 },
 	[26] = { name = "Medusa Skull", id = 23680 },

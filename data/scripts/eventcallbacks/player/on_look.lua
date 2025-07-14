@@ -71,7 +71,7 @@ local function appendAdminDetails(descriptionText, inspectedThing, inspectedPosi
 		if itemUniqueId > 0 and itemUniqueId < 65536 then
 			descriptionText = string.format("%s, Unique ID: %d", descriptionText, itemUniqueId)
 		end
-
+		
 		local doorIdAttribute = inspectedThing:getAttribute(ITEM_ATTRIBUTE_DOORID)
 		if doorIdAttribute and doorIdAttribute > 0 then
 			descriptionText = string.format("%s, Door ID: %d", descriptionText, doorIdAttribute)

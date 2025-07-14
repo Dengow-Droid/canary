@@ -77,6 +77,9 @@ Reserved player action storage key ranges (const.h)
 
 Storage = {
 	-- General storages
+	OneMiniBoss = 30002,
+	SecondMiniBoss = 30001,
+	TreeMiniBoss = 30000,
 	Dragonfetish = 30003,
 	EdronRopeQuest = 30004,
 	OrcKingGreeting = 30006,
@@ -126,6 +129,11 @@ Storage = {
 		SecondStage = 50002,
 		ThirdStage = 50003,
 		Crystal = 50004,
+	},
+	Podium = {
+		One = 70991,
+		Two = 70992,
+		Three = 70993,
 	},
 	DeeplingBosses = {
 		-- Reserved storage from 50075 - 50079
@@ -1070,6 +1078,8 @@ Storage = {
 				Reward = 41707,
 				RewardRoomText = 41708,
 				WitchesGrimoire = 41709,
+				ChestReward = 417101,
+				QuestReward = 417102,
 			},
 			TheThievesGuildQuest = {
 				Questline = 41710,
@@ -2881,6 +2891,17 @@ Storage = {
 				UnwelcomeKilled = 47016,
 				PaleWormEntrance = 47017,
 				PaleWormKilled = 47019,
+				MalizKilled = 470191,
+                VengarKilled = 470192,
+                BrutonKilled = 470193,
+                GreedokKilled = 470194,
+                VilearKilled = 470195,
+                CrultorKilled = 470196,
+                DesporKilled = 470197,
+				gralvalonKilled = 470198,
+				malvarothKilled = 470199,
+				twisterrorKilled = 470200,
+				arbazilothKilled = 470201,
 			},
 			PoltergeistOutfits = {
 				Received = 47020,
@@ -2904,6 +2925,7 @@ Storage = {
 				QuestReward = 47223,
 				OutfitReward = 47224,
 				MountReward = 47225,
+				BloodReward = 47226,
 			},
 		},
 		U12_60 = { -- update 12.60 - Reserved Storages 47501 - 47600
@@ -2993,6 +3015,11 @@ GlobalStorage = {
 		-- Reserved storage from 60020 - 60029
 		Chance = 60020,
 		Active = 60021,
+	},
+	Podium = {
+		One = 70991,
+		Two = 70992,
+		Three = 70993,
 	},
 	HeroRathleton = {
 		-- Reserved storage from 60070 - 60089

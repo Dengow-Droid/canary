@@ -884,7 +884,7 @@ tasks = {
 			},
 		},
 		[42] = {
-			killsRequired = 6666,
+			killsRequired = 666,
 			raceName = "Demons",
 			level = { 130, 9999 },
 			rank = RANK_ELITEHUNTER,

@@ -2,13 +2,13 @@ local mType = Game.createMonsterType("Latrivan")
 local monster = {}
 
 monster.description = "Latrivan"
-monster.experience = 10000
+monster.experience = 1000000
 monster.outfit = {
-	lookType = 12,
-	lookHead = 118,
-	lookBody = 33,
-	lookLegs = 118,
-	lookFeet = 91,
+	lookType = 2809,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0,
 }
@@ -17,11 +17,11 @@ monster.events = {
 	"InquisitionBossDeath",
 }
 
-monster.health = 25000
-monster.maxHealth = 25000
+monster.health = 250000
+monster.maxHealth = 250000
 monster.race = "fire"
 monster.corpse = 7893
-monster.speed = 195
+monster.speed = 395
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -108,16 +108,19 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1 },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = 0, maxDamage = -850, length = 8, spread = 3, effect = CONST_ME_FIREAREA, target = false },
-	{ name = "combat", interval = 1000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -250, length = 7, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -600, range = 4, radius = 1, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -60, maxDamage = -200, range = 7, radius = 4, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -2100 },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = 0, maxDamage = -1850, length = 8, spread = 3, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "combat", interval = 1000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -1250, length = 7, spread = 3, effect = CONST_ME_EXPLOSIONHIT, target = false },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -1600, range = 4, radius = 1, shootEffect = CONST_ANI_DEATH, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -60, maxDamage = -1200, range = 7, radius = 4, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = false },
+	{ name = "quaracrossdeath", interval = 2000, chance = 20, minDamage = -1100, maxDamage = -3700, target = false },
+	{ name = "quarasmokedeath", interval = 2000, chance = 20, minDamage = -1850, maxDamage = -3150, target = false },
 }
 
 monster.defenses = {
 	defense = 45,
 	armor = 35,
+	mitigation = 2.75,
 }
 
 monster.elements = {

@@ -2,13 +2,13 @@ local mType = Game.createMonsterType("Hellgorak")
 local monster = {}
 
 monster.description = "Hellgorak"
-monster.experience = 10000
+monster.experience = 5000000
 monster.outfit = {
-	lookType = 12,
-	lookHead = 19,
-	lookBody = 77,
-	lookLegs = 3,
-	lookFeet = 80,
+	lookType = 2820,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0,
 }
@@ -22,11 +22,11 @@ monster.bosstiary = {
 	bossRace = RARITY_BANE,
 }
 
-monster.health = 25850
-monster.maxHealth = 25850
+monster.health = 2585000
+monster.maxHealth = 2585000
 monster.race = "blood"
 monster.corpse = 6068
-monster.speed = 165
+monster.speed = 565
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -130,12 +130,20 @@ monster.attacks = {
 	{ name = "combat", interval = 2000, chance = 14, type = COMBAT_MANADRAIN, minDamage = -90, maxDamage = -500, radius = 5, effect = CONST_ME_STUN, target = false },
 	{ name = "combat", interval = 1000, chance = 11, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -520, radius = 5, effect = CONST_ME_FIREAREA, target = true },
 	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_LIFEDRAIN, minDamage = 0, maxDamage = -150, radius = 7, effect = CONST_ME_POFF, target = false },
+	{ name = "quaralargeicering", interval = 2000, chance = 20, minDamage = -1250, maxDamage = -4400, target = false },
+	{ name = "quararaidershoot", interval = 2000, chance = 35, minDamage = -650, maxDamage = -3900, range = 7, target = true },
+	{ name = "quarawatersplash", interval = 2000, chance = 18, minDamage = -1350, maxDamage = -3600, target = false },
+	{ name = "quaraseamonster", interval = 2000, chance = 18, minDamage = -1350, maxDamage = -4600, target = false },
+	{ name = "rotthingshaper", interval = 2000, chance = 18, target = false },
+	{ name = "poison chain", interval = 2000, chance = 15, minDamage = -600, maxDamage = -2900 },
+	{ name = "podzillaphyschain", interval = 2000, chance = 16 },
+	{ name = "rotthligexplo", interval = 2000, chance = 18, minDamage = -2400, maxDamage = -5625 },
 }
 
 monster.defenses = {
 	defense = 65,
 	armor = 70,
-	--	mitigation = ???,
+	mitigation = 2.75,
 	{ name = "combat", interval = 1000, chance = 11, type = COMBAT_HEALING, minDamage = 400, maxDamage = 900, effect = CONST_ME_MAGIC_GREEN, target = false },
 }
 

@@ -2,13 +2,13 @@ local mType = Game.createMonsterType("Madareth")
 local monster = {}
 
 monster.description = "Madareth"
-monster.experience = 10000
+monster.experience = 1000000
 monster.outfit = {
-	lookType = 12,
-	lookHead = 77,
-	lookBody = 78,
-	lookLegs = 80,
-	lookFeet = 79,
+	lookType = 2815,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0,
 }
@@ -22,11 +22,11 @@ monster.bosstiary = {
 	bossRace = RARITY_BANE,
 }
 
-monster.health = 75000
-monster.maxHealth = 75000
+monster.health = 750000
+monster.maxHealth = 750000
 monster.race = "fire"
 monster.corpse = 7893
-monster.speed = 165
+monster.speed = 365
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -122,16 +122,20 @@ monster.loot = {
 
 monster.attacks = {
 	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -2000 },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -180, maxDamage = -660, radius = 4, effect = CONST_ME_PURPLEENERGY, target = true },
-	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -600, maxDamage = -850, length = 5, spread = 2, effect = CONST_ME_BLACKSMOKE, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_MANADRAIN, minDamage = 0, maxDamage = -200, radius = 4, effect = CONST_ME_MAGIC_RED, target = true },
-	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_MANADRAIN, minDamage = 0, maxDamage = -250, radius = 5, effect = CONST_ME_MAGIC_RED, target = true },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -180, maxDamage = -1660, radius = 4, effect = CONST_ME_PURPLEENERGY, target = true },
+	{ name = "combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -600, maxDamage = -1850, length = 5, spread = 2, effect = CONST_ME_BLACKSMOKE, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_MANADRAIN, minDamage = 0, maxDamage = -1200, radius = 4, effect = CONST_ME_MAGIC_RED, target = true },
+	{ name = "combat", interval = 2000, chance = 5, type = COMBAT_MANADRAIN, minDamage = 0, maxDamage = -1250, radius = 5, effect = CONST_ME_MAGIC_RED, target = true },
+	{ name = "quaralargeicering", interval = 2000, chance = 20, minDamage = -1250, maxDamage = -4400, target = false },
+	{ name = "quararaidershoot", interval = 2000, chance = 35, minDamage = -650, maxDamage = -3900, range = 7, target = true },
+	{ name = "quarawatersplash", interval = 2000, chance = 18, minDamage = -1350, maxDamage = -3600, target = false },
+	{ name = "quaraseamonster", interval = 2000, chance = 18, minDamage = -1350, maxDamage = -4600, target = false },
 }
 
 monster.defenses = {
 	defense = 46,
 	armor = 48,
-	--	mitigation = ???,
+	mitigation = 2.75,
 	{ name = "combat", interval = 3000, chance = 14, type = COMBAT_HEALING, minDamage = 400, maxDamage = 900, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 

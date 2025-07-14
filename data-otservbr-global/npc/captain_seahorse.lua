@@ -72,13 +72,14 @@ addTravelKeyword("liberty bay", 170, Position(32285, 32892, 6))
 addTravelKeyword("ankrahmun", 160, Position(33092, 32883, 6))
 addTravelKeyword("cormaya", 20, Position(33288, 31956, 6))
 addTravelKeyword("oramond", 200, Position(33479, 31985, 7))
+addTravelKeyword("gunther", 200, Position(33861, 32012, 5))
 
 -- Kick
 keywordHandler:addKeyword({ "kick" }, StdModule.kick, { npcHandler = npcHandler, destination = { Position(33174, 31773, 6), Position(33175, 31771, 6), Position(33177, 31772, 6) } })
 
 -- Basic
-keywordHandler:addKeyword({ "sail" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Ankrahmun}, {Liberty Bay}, {Gray Island} or the isle {Cormaya}?" })
-keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Ankrahmun}, {Liberty Bay}, {Gray Island} or the isle {Cormaya}?" })
+keywordHandler:addKeyword({ "sail" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Ankrahmun}, {Liberty Bay}, {Gray Island}, {gunther} or the isle {Cormaya}?" })
+keywordHandler:addKeyword({ "passage" }, StdModule.say, { npcHandler = npcHandler, text = "Where do you want to go? To {Krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Venore}, {Port Hope}, {Ankrahmun}, {Liberty Bay}, {Gray Island}, {gunther} or the isle {Cormaya}?" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, text = "My name is Captain Seahorse from the Royal Tibia Line." })
 keywordHandler:addKeyword({ "edron" }, StdModule.say, { npcHandler = npcHandler, text = "This is Edron. Where do you want to go?" })
 keywordHandler:addKeyword({ "yalahar" }, StdModule.say, { npcHandler = npcHandler, text = "I'm sorry, but we don't serve this route. However, I heard that Wyrdin here in Edron is looking for adventurers to go on a trip to Yalahar for him." })

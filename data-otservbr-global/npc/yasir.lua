@@ -541,8 +541,6 @@ npcConfig.shop = {
 	{ itemName = "sparkion legs", clientId = 23504, sell = 310 },
 	{ itemName = "sparkion stings", clientId = 23505, sell = 280 },
 	{ itemName = "sparkion tail", clientId = 23503, sell = 300 },
-	{ itemName = "spectral gold nugget", clientId = 32724, sell = 500 },
-	{ itemName = "spectral silver nugget", clientId = 32725, sell = 250 },
 	{ itemName = "spellsinger's seal", clientId = 14008, sell = 280 },
 	{ itemName = "sphinx feather", clientId = 31437, sell = 470 },
 	{ itemName = "sphinx tiara", clientId = 31438, sell = 360 },

@@ -26,5 +26,5 @@ function portalPaleWorm.onStepIn(creature, item, position, fromPosition)
 end
 
 portalPaleWorm:type("stepin")
-portalPaleWorm:position({ x = 33570, y = 31444, z = 10 })
+portalPaleWorm:position({ x = 33570, y = 31444, z = 10 }, {x = 1604, y = 1069, z = 7})
 portalPaleWorm:register()

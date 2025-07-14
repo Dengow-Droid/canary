@@ -33,6 +33,10 @@ local outfitConfig = {
 	-- fire-fighter
 	[39544] = { female = 1569, male = 1568, addon = 1, achievement = "Friendly Fire", orangeText = "You feel like fighting a fire!" },
 	[39545] = { female = 1569, male = 1568, addon = 2, achievement = "Friendly Fire", orangeText = "The flame engulfs you!" },
+	
+	-- Draccoon Herald
+	[44754] = { female = 1723, male = 1722, addon = 1, achievement = "The Rule of Raccool", orangeText = "You almost feel as cool as a raccoon!" },
+	[44753] = { female = 1723, male = 1722, addon = 2, achievement = "The Rule of Raccool", orangeText = "Now, where's the trash?" },
 }
 
 local usableOutfitItems = Action()

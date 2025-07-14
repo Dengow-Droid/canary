@@ -74,3 +74,10 @@ function Player.removeFamePoints(self, amount)
 	local current = math.max(0, points)
 	self:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Constants.Spike_Fame_Points, current - amount)
 end
+
+function removefrags(player)
+       playerid = player:getGuid()
+    player:remove()
+    db.query('UPDATE `player_kills` SET `time` = 1 WHERE `player_id` = '..playerid..'')
+    return true
+end 

@@ -1394,8 +1394,6 @@ LootShopConfigTable = {
 		{ itemName = "small sapphire", clientId = 3029, sell = 250 },
 		{ itemName = "small topaz", clientId = 9057, sell = 200 },
 		{ itemName = "small treasure chest", clientId = 35571, sell = 500 },
-		{ itemName = "spectral gold nugget", clientId = 32724, sell = 500 },
-		{ itemName = "spectral silver nugget", clientId = 32725, sell = 250 },
 		{ itemName = "spectral stone", clientId = 4840, sell = 50 },
 		{ itemName = "talon", clientId = 3034, sell = 320 },
 		{ itemName = "unicorn figurine", clientId = 30054, sell = 50000 },

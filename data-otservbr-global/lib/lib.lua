@@ -12,3 +12,6 @@ dofile(DATA_DIRECTORY .. "/lib/tables/load.lua")
 
 -- Functions library
 dofile(DATA_DIRECTORY .. "/lib/functions/load.lua")
+
+-- Mount Doll library
+dofile(DATA_DIRECTORY .. '/lib/mount_doll_lib.lua')

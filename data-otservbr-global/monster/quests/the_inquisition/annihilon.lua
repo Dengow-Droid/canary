@@ -2,13 +2,13 @@ local mType = Game.createMonsterType("Annihilon")
 local monster = {}
 
 monster.description = "Annihilon"
-monster.experience = 15000
+monster.experience = 1500000
 monster.outfit = {
-	lookType = 12,
-	lookHead = 3,
-	lookBody = 9,
-	lookLegs = 77,
-	lookFeet = 77,
+	lookType = 2809,
+	lookHead = 0,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
 	lookAddons = 0,
 	lookMount = 0,
 }
@@ -22,11 +22,11 @@ monster.bosstiary = {
 	bossRace = RARITY_BANE,
 }
 
-monster.health = 46500
-monster.maxHealth = 46500
+monster.health = 4650000
+monster.maxHealth = 4650000
 monster.race = "fire"
 monster.corpse = 6068
-monster.speed = 66
+monster.speed = 366
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -117,17 +117,19 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1707 },
-	{ name = "combat", interval = 1000, chance = 11, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -600, length = 8, spread = 3, effect = CONST_ME_MORTAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -700, radius = 4, effect = CONST_ME_ICEAREA, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -4707 },
+	{ name = "combat", interval = 1000, chance = 11, type = COMBAT_DEATHDAMAGE, minDamage = 0, maxDamage = -2600, length = 8, spread = 3, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -2700, radius = 4, effect = CONST_ME_ICEAREA, target = false },
 	{ name = "combat", interval = 3000, chance = 18, type = COMBAT_PHYSICALDAMAGE, minDamage = -50, maxDamage = -255, radius = 5, effect = CONST_ME_GROUNDSHAKER, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -600, radius = 6, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -50, maxDamage = -2600, radius = 6, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
+	{ name = "quarasmallicering", interval = 2000, chance = 35 },
+	{ name = "podzillaphyschain", interval = 2000, chance = 45 },
 }
 
 monster.defenses = {
 	defense = 55,
 	armor = 60,
-	--	mitigation = ???,
+	mitigation = 1.75,
 	{ name = "combat", interval = 1000, chance = 14, type = COMBAT_HEALING, minDamage = 400, maxDamage = 900, effect = CONST_ME_MAGIC_GREEN, target = false },
 	{ name = "speed", interval = 1000, chance = 4, speedChange = 500, effect = CONST_ME_MAGIC_BLUE, target = false, duration = 7000 },
 }

@@ -1,7 +1,7 @@
 local bpItems = {
 	{ name = "ancient coin", count = 1 },
-	{ name = "draken sulphur", count = 1 },
-	{ name = "seacrest hair", count = 2 },
+	{ name = "sorcerer's chest", count = 1 },
+	{ name = "druid's chest", count = 1 },
 	{ name = "mystical hourglass", count = 2 },
 	{ name = "gold token", count = 3 },
 	{ name = "blue gem", count = 1 },

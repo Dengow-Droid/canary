@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("The First Dragon")
 local monster = {}
 
 monster.description = "the first dragon"
-monster.experience = 9000
+monster.experience = 2900000
 monster.outfit = {
 	lookType = 947,
 	lookHead = 94,
@@ -13,11 +13,11 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 50000
-monster.maxHealth = 50000
+monster.health = 5000000
+monster.maxHealth = 5000000
 monster.race = "blood"
 monster.corpse = 25065
-monster.speed = 175
+monster.speed = 475
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -74,12 +74,21 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, skill = 120, attack = 130 },
+	{ name = "melee", interval = 2000, chance = 100, skill = 420, attack = 530 },
 	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -410, maxDamage = -695, range = 5, radius = 5, effect = CONST_ME_FIREAREA, target = true },
 	{ name = "speed", interval = 2000, chance = 20, speedChange = -600, radius = 7, effect = CONST_ME_MAGIC_RED, target = false, duration = 10000 },
 	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -1010, maxDamage = -1995, length = 9, spread = 3, effect = CONST_ME_FIREAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -410, maxDamage = -595, radius = 7, effect = CONST_ME_HITBYFIRE, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -150, maxDamage = -280, radius = 6, effect = CONST_ME_MAGIC_RED, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_FIREDAMAGE, minDamage = -410, maxDamage = -1595, radius = 7, effect = CONST_ME_HITBYFIRE, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_LIFEDRAIN, minDamage = -150, maxDamage = -1280, radius = 6, effect = CONST_ME_MAGIC_RED, target = false },
+	{ name = "combat", interval = 2000, chance = 35, type = COMBAT_ICEDAMAGE, minDamage = -400, maxDamage = -2750, range = 7, shootEffect = CONST_ANI_SHIVERARROW, effect = CONST_ME_ICEATTACK, target = true },
+	{ name = "quarasmallicering", interval = 2000, chance = 35 },
+	{ name = "podzillaphyschain", interval = 2000, chance = 35 },
+	{ name = "quaracrossdeath", interval = 2000, chance = 20, minDamage = -1100, maxDamage = -5700, target = false },
+	{ name = "quarasmokedeath", interval = 2000, chance = 20, minDamage = -850, maxDamage = -7150, target = false },
+	{ name = "quaralargeicering", interval = 2000, chance = 20, minDamage = -1250, maxDamage = -3400, target = false },
+	{ name = "quararaidershoot", interval = 2000, chance = 35, minDamage = -650, maxDamage = -2900, range = 7, target = true },
+	{ name = "quarawatersplash", interval = 2000, chance = 18, minDamage = -1350, maxDamage = -2600, target = false },
+	{ name = "quaraseamonster", interval = 2000, chance = 18, minDamage = -1350, maxDamage = -3600, target = false },
 }
 
 monster.defenses = {

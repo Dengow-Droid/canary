@@ -16,6 +16,7 @@ monster.outfit = {
 monster.events = {
 	"TheGreatDragonHuntDeath",
 	"TheFirstDragonDragonTaskDeath",
+	"MonsterHunter",
 }
 
 monster.raceId = 34
