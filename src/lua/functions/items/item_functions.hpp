@@ -95,4 +95,8 @@ private:
 	static int luaItemGetOwnerName(lua_State* L);
 	static int luaItemHasOwner(lua_State* L);
 	static int luaItemActor(lua_State* L);
+
+	static int luaItemSetShader(lua_State* L);
+	static int luaItemGetShader(lua_State* L);
+	static int luaItemHasShader(lua_State* L);
 };

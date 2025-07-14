@@ -231,10 +231,14 @@
 	<mount id="229" clientid="1743" name="Bog Tyrant" speed="10" premium="no" type="store" />
 	<mount id="230" clientid="1744" name="Crimson Fang" speed="10" premium="no" type="store" />
 	<mount id="231" clientid="1778" name="Bumblebee" speed="10" premium="no" type="store" />
-	<mount id="232" clientid="2805" name="Petista" speed="10" premium="no" type="store" />
-	<mount id="233" clientid="2806" name="Black Tornado" speed="10" premium="no" type="store" />
-	<mount id="234" clientid="2807" name="Grey Tornado" speed="10" premium="no" type="store" />
-	<mount id="235" clientid="2817" name="Simba Galactico" speed="10" premium="no" type="store" />
-	<mount id="236" clientid="2818" name="Pegasus Grey" speed="10" premium="no" type="store" />
-	<mount id="237" clientid="2819" name="Pegasus Black" speed="10" premium="no" type="store" />
+	<mount id="232" clientid="1810" name="Primal Demonosaur" speed="10" premium="no" type="quest" />
+	<mount id="233" clientid="1833" name="Night Locust" speed="10" premium="no" type="store" />
+	<mount id="234" clientid="1834" name="Leaf Locust" speed="10" premium="no" type="store" />
+	<mount id="235" clientid="1835" name="Pearl Locust" speed="10" premium="no" type="store" />
+	<mount id="236" clientid="2805" name="Petista" speed="10" premium="no" type="store" />
+	<mount id="237" clientid="2806" name="Black Tornado" speed="10" premium="no" type="store" />
+	<mount id="238" clientid="2807" name="Grey Tornado" speed="10" premium="no" type="store" />
+	<mount id="239" clientid="2817" name="Simba Galactico" speed="10" premium="no" type="store" />
+	<mount id="240" clientid="2818" name="Pegasus Grey" speed="10" premium="no" type="store" />
+	<mount id="241" clientid="2819" name="Pegasus Black" speed="10" premium="no" type="store" />
 </mounts>
